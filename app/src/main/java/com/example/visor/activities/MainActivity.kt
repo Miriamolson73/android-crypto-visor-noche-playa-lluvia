@@ -36,6 +36,10 @@ class MainActivity : AppCompatActivity(), CoroutineScope {
 
             view.etiquetaPrecio.text = moneda.precioActual.toString()
             view.etiqueta_variacion.text=moneda.variacionFormateada()
+            view.etiqueta_variacion.setTextColor(
+                    resources.getColor(
+                    if(moneda.estaEnAlza()) R.color.alza else R.color.baja
+            ))
             Glide.with(this).load(moneda.icono).into(view.imagen_icono)
         }
         lista_monedas.setup(adapter)

@@ -23,10 +23,10 @@ data class Moneda(
     fun estaEnAlza():Boolean=variacionEn24hs>=0
 
 
-    private fun variacionPorcentaje()= "%.1f".format(variacionEn24hs)
+    private fun variacionPorcentaje()= "%.2f".format(variacionEn24hs)
 
     fun variacionFormateada()= "(${variacionPorcentaje()}%${simboloDeVariacion()})"
-    private fun simboloDeVariacion()= if (estaEnAlza()) "▲" else "▼"
+    private fun simboloDeVariacion()= if (estaEnAlza()) " ▲" else " ▼"
 
 
 }
