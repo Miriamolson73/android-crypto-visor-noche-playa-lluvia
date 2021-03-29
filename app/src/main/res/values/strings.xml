@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Visor</string>
 
-    <string name="dolores">Dolores</string>
+    <string name="dolares">Dolares</string>
+
     <string name="Bitcoin" />
+
+
+
 </resources>

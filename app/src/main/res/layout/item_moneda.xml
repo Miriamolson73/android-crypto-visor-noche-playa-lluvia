@@ -5,35 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="8dp"
+    android:padding="15dp"
     android:gravity="center_vertical"
     >
     <ImageView
+        android:id="@+id/imagen_icono"
         android:layout_width="24dp"
         android:layout_height="24dp"
         tools:src="@drawable/ic_launcher_foreground"
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="bitcoin"
-      />
+    />
+
     <TextView
         android:id="@+id/etiquetaNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Bitcoin"
+        android:textStyle="bold"
+        android:layout_marginStart="4dp"
+        tools:text="@string/Bitcoin"
         />
     <TextView
+        android:id="@+id/etiqueta_variacion"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        tools:textColor="@color/alza"
+        tools:text="(2.24% ▲)"
+        android:textStyle="bold"
+        android:layout_marginStart="4dp"
 
+        />
+
+    <TextView
+        android:id="@+id/tipo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dolores"
+
+        android:layout_marginStart="4dp"
+        android:text="$"
         />
+
+
 
     <TextView
         android:id="@+id/etiquetaPrecio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+
         tools:text="2010"
         />
 
